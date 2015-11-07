@@ -4,23 +4,24 @@ https://developers.arcgis.com/javascript/jsapi/elevationprofile-amd.html
 
 Widget has two parts Control Widget (draws lines):
 
+
 elevation: {
-			    include: true,
-			    id: 'elevationnew',
-			    type: 'titlePane',
-			    path: 'gis/dijit/ElevationProfile',
-			    canFloat: true,
-			    title: 'Elevation Profile',
-			    open: true,
-			    position: 20,
-			    options: {
-                    map: true
-			    }
-			},
+	include: true,
+	id: 'elevationnew',
+	type: 'titlePane',
+	path: 'gis/dijit/ElevationProfile',
+	canFloat: true,
+	title: 'Elevation Profile',
+	open: true,
+	position: 20,
+	options: {
+                map: true
+		}
+	},
 
 and the table widget, which works in conjunction with Attribute Widget on the bottom pane:
 	
-				elevationtable: {
+			elevationtable: {
 			    include: true,
 			    id: 'elevationtable',
 			    type: 'invisible',
