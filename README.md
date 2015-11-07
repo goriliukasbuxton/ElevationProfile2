@@ -3,6 +3,7 @@ Widget is based on the ESRI new Elevation Profile Dijit:
 https://developers.arcgis.com/javascript/jsapi/elevationprofile-amd.html
 
 Widget has two parts Control Widget (draws lines):
+
 elevation: {
 			    include: true,
 			    id: 'elevationnew',
@@ -16,8 +17,8 @@ elevation: {
                     map: true
 			    }
 			},
-			
-	and the table widget, which works in conjunction with Attribute Widget on the bottom pane:
+
+and the table widget, which works in conjunction with Attribute Widget on the bottom pane:
 	
 				elevationtable: {
 			    include: true,
