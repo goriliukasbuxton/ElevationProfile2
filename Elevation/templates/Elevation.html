@@ -1,0 +1,33 @@
+﻿<div>
+    <div id="elevinfo">
+        <label>Digitize a route:</label>
+        <!--
+        <button id="Polyline"  data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'lineIcon',showLabel:true">
+            Polyline
+        </button>
+
+            -->
+        <button data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'lineIcon',showLabel:true"
+                data-dojo-attach-event="onClick:drawLine">
+            Line
+        </button>
+        <button data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'freehandDrawIcon',showLabel:true"
+                data-dojo-attach-event="onClick:drawFreehandLine">
+            Freehand Line
+        </button>
+        <label>Select unit measure:</label>
+        <select id="elevunitsSelect" data-dojo-type="dijit/form/Select">
+            <option value="esriMiles">Miles</option>
+            <option value="esriKilometers">Kilometers</option>
+            <option value="esriMeters">Meters</option>
+            <option value="esriNauticalMiles">Nautical Miles</option>
+            <option value="esriYards">Yards</option>
+            <option value="esriFeet">Feet</option>
+        </select>
+        <button data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'clearIcon',showLabel:true"
+                data-dojo-attach-event="onClick:clearGraphics">
+            Clear Drawing
+        </button>
+    </div> 
+
+</div>
