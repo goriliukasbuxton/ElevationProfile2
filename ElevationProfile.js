@@ -38,12 +38,15 @@
         },
 
         drawLine: function() {
+            topic.publish('mapClickMode/setCurrent', 'measure');
             topic.publish('elevation/polylineclick', 'polyline');
         },
         drawFreehandLine: function() {
+            topic.publish('mapClickMode/setCurrent', 'measure');
             topic.publish('elevation/polylineclick', 'freehandpolyline');
         },
         clearGraphics: function(){
+            topic.publish('mapClickMode/setCurrent', 'identify');
             topic.publish('elevation/deactivate', 'click');
         }
 
